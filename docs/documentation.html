@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leadory Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #4f46e5;
+        }
+
+        p {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 14px;
+        }
+
+        code {
+            background: #eef2ff;
+            color: #1e1b4b;
+            padding: 4px 6px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 18px;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        .box {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 500;
+            background: #eef2ff;
+            color: #4f46e5;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        li {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #64748b;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Leadory – Documentation</h1>
+    <p>
+        Thank you for choosing <strong>Leadory</strong>.  
+        This documentation will help you understand the file structure,
+        customization options, and how to switch between color variants easily.
+    </p>
+
+    <!-- Introduction -->
+    <div class="box">
+        <span class="badge">Overview</span>
+        <h2>Introduction</h2>
+        <p>
+            Leadory is a modern, clean, and responsive business landing page
+            template built with HTML, CSS, Bootstrap, and lightweight JavaScript.
+            It is designed for startups, agencies, and professional websites.
+        </p>
+    </div>
+
+    <!-- File Structure -->
+    <div class="box">
+        <span class="badge">Structure</span>
+        <h2>File Structure</h2>
+        <p>
+            All files are well organized for easy understanding and customization:
+        </p>
+
+        <pre>
+leadory/
+├── index.html
+├── css/
+│   ├── bootstrap.min.css
+│   ├── style.css
+├── js/
+│   ├── bootstrap.bundle.min.js
+│   ├── main.js
+├── images/
+│   └── mockups/
+├── docs/
+│   └── documentation.html
+        </pre>
+    </div>
+
+    <!-- Color Variants -->
+    <div class="box">
+        <span class="badge">Customization</span>
+        <h2>Color Variants (Blue, Emerald, Orange)</h2>
+
+        <p>
+            Leadory uses a <strong>CSS variable-based color system</strong>.
+            This allows you to change the entire theme color by editing
+            only <strong>three variables</strong> inside <code>style.css</code>.
+        </p>
+
+        <p>
+            Open <code>css/style.css</code> and locate the <code>:root</code> section:
+        </p>
+
+        <pre>
+/* Blue (Default) */
+--primary-color: #4f46e5;
+--primary-hover: #4338ca;
+--primary-light: #eef2ff;
+
+/* Emerald */
+/* --primary-color: #10b981;
+--primary-hover: #059669;
+--primary-light: #ecfdf5; */
+
+/* Orange */
+/* --primary-color: #f97316;
+--primary-hover: #ea580c;
+--primary-light: #fff7ed; */
+        </pre>
+
+        <p>
+            <strong>How to use a variant:</strong>
+        </p>
+
+        <ul>
+            <li>Only one color set should be active at a time</li>
+            <li>Comment out the unused variants</li>
+            <li>Uncomment the variant you want to use</li>
+            <li>Save the file and refresh the browser</li>
+        </ul>
+
+        <p>
+            This system ensures clean code, easy maintenance,
+            and unlimited future color themes.
+        </p>
+    </div>
+
+    <!-- Animations -->
+    <div class="box">
+        <span class="badge">UX</span>
+        <h2>Scroll Animations</h2>
+        <p>
+            Scroll animations are implemented using a lightweight JavaScript
+            observer and CSS transitions.
+        </p>
+
+        <p>
+            To disable animations, simply remove the <code>reveal</code>
+            class from the HTML elements.
+        </p>
+    </div>
+
+    <!-- Credits -->
+    <div class="box">
+        <span class="badge">Credits</span>
+        <h2>Credits & Resources</h2>
+        <ul>
+            <li>Bootstrap Framework</li>
+            <li>Bootstrap Icons</li>
+            <li>Google Fonts (Inter)</li>
+        </ul>
+    </div>
+
+    <!-- Changelog -->
+    <div class="box">
+        <span class="badge">Updates</span>
+        <h2>Changelog</h2>
+        <ul>
+            <li>v1.0 – Initial release</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © 2025 Leadory. Thank you for your purchase.
+    </div>
+
+</div>
+
+</body>
+</html>
